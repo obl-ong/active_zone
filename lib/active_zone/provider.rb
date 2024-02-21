@@ -2,12 +2,11 @@ module ActiveZone
   class Provider
     self.abstract_class = true
 
-    ##
-    # Appends resources to a zone
-    # @param zone [Zone]
-    # @param resources [ActiveRecord::Relation|Array[]]
-    def resources.add(zone, resources)
-      raise NotImplementedError
+    # Get the zones for a given provider
+    #
+    # @return ActiveZone::Provider::ZoneCollectionProxy
+    def zones
+      ActiveZone::Provider::ZoneCollectionProxy.new(self)
     end
   end
 end
