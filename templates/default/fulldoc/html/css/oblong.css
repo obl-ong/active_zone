@@ -1,0 +1,97 @@
+body {
+  font-family: system-ui !important;
+}
+
+h1,
+h2 {
+  font-stretch: condensed;
+  font-weight: 800;
+}
+
+/* Solarized */
+
+/* light is default mode, so pair with general html definition */
+
+:root {
+  --bg: #fdf6e3;
+}
+
+html, #main, #content, .fixed_header, #toc {
+  background-color: #fdf6e3;
+  color: #657b83;
+}
+
+* {
+  color: #657b83;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #586e75;
+  border-color: #657b83;
+}
+
+a, a:active, a:visited {
+  color: #268bd2 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #002b36
+  }
+
+  html, #main, #content {
+    background-color: #002b36;
+    color: #839496;
+  }
+
+  .fixed_header, #toc {
+    background-color: #073642;
+    box-shadow: none;
+  }
+
+  h3.signature, .summary_signature {
+    background-color: #586e75;
+    * {
+      color: #fdf6e3;
+    }
+  }
+
+  * {
+    color: #839496;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    color: #93a1a1;
+    border-color: #839496;
+  }
+
+  a, a:active, a:visited {
+    color: #268bd2 !important;
+    border-bottom: 1px dotted #bbd;
+  }
+}
+
+html * {
+  color-profile: sRGB;
+  rendering-intent: auto;
+}
+
+/* Menu overrides */
+
+#full_list {
+  width: 90%;
+  padding-top: 1rem;
+  padding-left: 0.25rem;
+
+  li > div {
+    border-radius: 6px;
+  }
+
+  li.clicked {
+    font-weight: 600;
+  }
+
+  li {
+    background: var(--bg);
+  }
+}

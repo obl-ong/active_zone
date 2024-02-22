@@ -94,6 +94,9 @@ GEM
     erubi (1.12.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
@@ -114,6 +117,7 @@ GEM
     marcel (1.0.2)
     mini_mime (1.1.5)
     minitest (5.22.2)
+    multi_xml (0.6.0)
     mutex_m (0.2.0)
     net-imap (0.4.10)
       date
@@ -246,6 +250,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_zone!
+  httparty (~> 0.21.0)
   puma
   resolv
   sprockets-rails

@@ -1,7 +1,7 @@
-lib/active_zone.rb d8c773943ee2dfdea2b0c33757efd1eab29ac065
+lib/active_zone.rb 5d3804867f2d542660047f2d6a0486f930ccfc6d
 lib/active_zone/engine.rb 84cab35ee56cd6c2157c778eddba221c54a379a7
 lib/active_zone/version.rb ea1dc3884c9984b177d26e0e5dc81ffd7b4baeae
-lib/active_zone/provider.rb 209f0332ae4c849efe3f4917b4ec5b2cbf0e071a
+lib/active_zone/provider.rb 881ae47c9918d6da29c8206988272a163744a0f8
 app/models/active_zone/zone.rb bcfa991066a7ce44813f54cc15274b02af15a9fc
 app/models/active_zone/resource.rb 1dcf31f8bdcc18db80cba8bd7acd0f2fb18fd1ba
 app/models/active_zone/resource/a.rb 244a04398b7b0ab30fa528558381fea29d747eb0
@@ -22,4 +22,5 @@ app/models/active_zone/resource/naptr.rb 057690f2d90ecb61fa32e8cb351c2725c16b216
 app/models/active_zone/resource/sshfp.rb 773228c8bd8690f9b2f28f6c9d82b9974be00df4
 lib/active_zone/provider/configurator.rb 751ace2e222389959a4a8593290c2e459acc17f4
 lib/active_zone/provider/disk_provider.rb 010204df18a028d4217435790de0fc22bab8a175
-lib/active_zone/provider/zone_collection_proxy.rb 3f8e9c0166b4db427eb3e1a6caa52edc36bfbab9
+lib/active_zone/provider/zone_collection_proxy.rb 416039ddcc09ad404611b5c28a823615c6b03eb9
+lib/active_zone/provider/erldns_provider.rb 80da76821a46a12417db92e1124b1d0eda731c02
